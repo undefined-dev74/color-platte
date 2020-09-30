@@ -1,11 +1,12 @@
-import React from 'react';
-import Ipod from './Container/Ipod/Ipod';
+import React from "react";
+import Palette from "./components/Palette";
+import seedColors from './assets/seedColors';
 
-class  App extends React.Component {
-  render(){
+class App extends React.Component {
+  render() {
     return (
-      <div className="App">
-        <Ipod/>
+      <div>
+        <Palette {...seedColors[4]} />
       </div>
     );
   }
